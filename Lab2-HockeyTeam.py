@@ -13,13 +13,16 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
 
-    input("What team are you looking for up to date stats on?: ").lower()
-    
-    
+    # Gets user inputs for teamName, teamWins, and teamLosses. Takes the wins/loses vals as integers.
+    teamName = input("What is the name of the team you would like to look at today?: ")
+    winsNum = int(input(f"\nHow many games have the {teamName}'s won so far this season?: "))
+    lossesNum = int(input(f"\nHow many games have the {teamName}'s lost so far this season?: "))
 
+    # Does the caclc for the win % of the team. 
+    totalGamesPlayed = winsNum + lossesNum
+    winPerercentage = winsNum / totalGamesPlayed
 
-
-
+    # Prints out the team name, wins, losses, and the win percentage. formats the win percentage to 4 decimal places.
+    print(f"The {teamName}"+"'s"+f" have {winsNum} wins and {lossesNum} losses, with a win percentage of "f"{winPerercentage:.4f}.") 
     # YOUR CODE ENDS HERE
-
 main()
