@@ -13,9 +13,9 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
 
-
-
-
+    input("What team are you looking for up to date stats on?: ").lower()
+    
+    
 
 
 
